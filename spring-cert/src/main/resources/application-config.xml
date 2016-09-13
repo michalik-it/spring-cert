@@ -16,11 +16,14 @@
 		<constructor-arg ref="tr" />
 	</bean>
 
-	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
-		<property name="url" value="jdbc:mysql://localhost:3306/springdb?serverTimezone=UTC" />
-		<property name="username" value="root" />
-		<property name="password" value="root" />
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-	</bean>
+<!-- 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource"> -->
+<!-- 		<property name="url" value="jdbc:mysql://localhost:3306/springdb?serverTimezone=UTC" /> -->
+<!-- 		<property name="username" value="root" /> -->
+<!-- 		<property name="password" value="root" /> -->
+<!-- 		<property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
+<!-- 	</bean> -->
+
+	<jdbc:embedded-database id="dataSource" type="HSQL">
+	</jdbc:embedded-database>
 
 </beans>

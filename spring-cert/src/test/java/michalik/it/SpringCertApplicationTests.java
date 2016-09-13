@@ -4,6 +4,7 @@ import michalik.it.service.TransactionService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
@@ -22,15 +23,15 @@ public class SpringCertApplicationTests {
     TransactionService transactionService;
     
     @Test
+    @DirtiesContext
     public void contextLoads() {
         System.out.println("Test start");
-        transactionService.transfer(1, 2, 5000);
-        transactionService.transfer(1, 2, 5000);
         transactionService.transfer(1, 2, 5000);
         System.out.println("Test end");
     }
     
     @Test
+    @DirtiesContext
     public void test2() {
         System.out.println("Test 2 start");
         

@@ -1,2 +1,2 @@
-DELETE FROM springdb.accounts WHERE id=1;
-DELETE FROM springdb.accounts WHERE id=2;
+DELETE FROM accounts WHERE id=1;
+DELETE FROM accounts WHERE id=2;
