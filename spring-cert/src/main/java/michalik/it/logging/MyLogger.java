@@ -35,6 +35,16 @@ public class MyLogger {
         System.out.println();
     }
     
+    @Before("execution(* *.*transfer*(..))")
+    public void logAAlt(JoinPoint jp) {
+        System.out.println("MyLogger.logAAlt(), execution(* transfer(..)) params:");
+        for ( Object arg : jp.getArgs()) {
+            System.out.print(arg + " ");
+      
+        }
+        System.out.println();
+    }
+    
     @Before("transferMethodPC() && target(ts) && args(p1,p2,p3)")
     public void logAHandleParams(TransactionService ts, int p1, int p2, int p3) {
         System.out.println("MyLogger.logAHandleParams(), execution(* transfer(..)) input: " + p1 + " " + p2 + " " + p3);
@@ -60,6 +70,7 @@ public class MyLogger {
     @AfterThrowing(value = "execution(* *..TransactionService.*(..))", throwing = "e")
     public void logD(JoinPoint jp, IllegalArgumentException e) {
         System.out.println("MyLogger.logD() called after throwing: " + jp.getSignature() + " message: " + e.getLocalizedMessage());
+
     }
     
     @Around(value = "transferMethodPC() && !execution(* *..TransactionService.transfer2(..))")
