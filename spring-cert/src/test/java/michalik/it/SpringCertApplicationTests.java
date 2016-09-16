@@ -28,9 +28,13 @@ public class SpringCertApplicationTests {
     @Autowired 
     private ApplicationContext applicationContext;
     
+    @Autowired
+    private SomeService someService;
+    
     @Test
     //@DirtiesContext
     public void test1() {
+        System.out.println("=======>" + someService.getName());
         System.out.println("test1() start");
         transactionService.transfer(1, 2, 5000);
         System.out.println("Balance for 1:" + transactionService.getBalance(1));

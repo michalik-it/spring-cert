@@ -32,6 +32,10 @@
 
 	<jdbc:embedded-database id="dataSource" type="HSQL">
 	</jdbc:embedded-database>
+	
+	<bean id="someService" class="michalik.it.SomeService">
+		<property name="name" value="#'aaa'" />
+	</bean>
 
 
 </beans>
