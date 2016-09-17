@@ -1,4 +1,5 @@
-314
+SLIDES:314
+VIDEO: 10-01:40:30
 
 VIDEO DESCRIPTION:
 5. DI XML based + Bean Lifecycle  + Proxy
@@ -6,4 +7,4 @@ VIDEO DESCRIPTION:
 7. Spring AOP part 2
 8. JDBC Template
 9. Data Managment + Transactions part 1
-10. Transactions part 2
+10. Transactions part 2  + JPA

@@ -13,6 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.jdbc.Sql.ExecutionPhase;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 //@RunWith(SpringRunner.class)
 //@SpringBootTest
@@ -27,14 +28,13 @@ public class SpringCertApplicationTests {
     
     @Autowired 
     private ApplicationContext applicationContext;
-    
-    @Autowired
-    private SomeService someService;
+//    
+//    @Autowired
+//    private SomeService someService;
     
     @Test
     //@DirtiesContext
     public void test1() {
-        System.out.println("=======>" + someService.getName());
         System.out.println("test1() start");
         transactionService.transfer(1, 2, 5000);
         System.out.println("Balance for 1:" + transactionService.getBalance(1));
@@ -51,9 +51,9 @@ public class SpringCertApplicationTests {
     @Test(expected=IllegalArgumentException.class)
     public void test3() {
         System.out.println("test3() start");
-        transactionService.transfer(1, 2, 5000);
-        transactionService.transfer(1, 2, 5000);
-        transactionService.transfer(1, 2, 5000);
+        transactionService.transfer3(1, 2, 5000);
+//        transactionService.transfer(1, 2, 5000);
+//        transactionService.transfer(1, 2, 5000);
         System.out.println("Balance for 1:" + transactionService.getBalance(1));
         System.out.println("test3() end");
     }

@@ -24,6 +24,11 @@ public class MyLogger {
     public void transferMethodPC2(TransactionService ts, int p1, int p2, int p3) {
         
     }
+    /*
+    @Before("execution(* *.transfer(..))")
+    public void logX() {
+    	System.out.println("MyLogger.logX()");
+    }
     
     @Before("transferMethodPC()")
     public void logA(JoinPoint jp) {
@@ -78,4 +83,5 @@ public class MyLogger {
         System.out.println("MyLogger.logAround() called after throwing: " + jp.getSignature());
         jp.proceed();
     }
+    */
 }
