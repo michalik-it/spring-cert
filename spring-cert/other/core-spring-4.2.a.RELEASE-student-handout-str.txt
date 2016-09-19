@@ -1,4 +1,8 @@
-SLIDES:314
+SLIDES:447
+
+Questions for slides:
+ 441 - o co commmon ?
+
 VIDEO: 10-01:40:30
 
 VIDEO DESCRIPTION:

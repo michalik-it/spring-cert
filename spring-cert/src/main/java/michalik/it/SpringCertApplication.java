@@ -7,8 +7,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import michalik.it.configuration.MainConfiguration;
 import michalik.it.service.TransactionService;
 
 @SpringBootApplication
