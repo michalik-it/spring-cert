@@ -3,7 +3,7 @@ SLIDES:447
 Questions for slides:
  441 - o co commmon ?
 
-VIDEO: 10-01:40:30
+VIDEO: 11 00:00:00
 
 VIDEO DESCRIPTION:
 5. DI XML based + Bean Lifecycle  + Proxy
@@ -11,4 +11,5 @@ VIDEO DESCRIPTION:
 7. Spring AOP part 2
 8. JDBC Template
 9. Data Managment + Transactions part 1
-10. Transactions part 2  + JPA
+10. Transactions part 2  + JPA + Spring Data
+11.
