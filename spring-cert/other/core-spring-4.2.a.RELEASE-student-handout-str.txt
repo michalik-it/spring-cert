@@ -4,7 +4,7 @@ Questions for slides:
  441 - o co commmon ?
  515 - spring mvc configuration
 
-VIDEO: 11 02:15:00
+VIDEO: 12 00:00:00
 
 VIDEO DESCRIPTION:
 5. DI XML based + Bean Lifecycle  + Proxy
@@ -13,4 +13,5 @@ VIDEO DESCRIPTION:
 8. JDBC Template
 9. Data Managment + Transactions part 1
 10. Transactions part 2  + JPA + Spring Data part 1
-11. Spring Data part 2 + Spring MVC + Spring Boot
+11. Spring Data part 2 + Spring MVC + Spring Boot part1
+12. Spring Boot part 2
