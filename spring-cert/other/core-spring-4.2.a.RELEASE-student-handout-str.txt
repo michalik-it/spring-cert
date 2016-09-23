@@ -14,3 +14,5 @@ VIDEO DESCRIPTION:
 9. Data Managment + Transactions part 1
 10. Transactions part 2  + JPA + Spring Data part 1
 11. Spring Data part 2 + Spring MVC + Spring Boot
+
+To jest tekst dla branch_1
