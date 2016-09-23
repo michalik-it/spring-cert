@@ -16,3 +16,4 @@ VIDEO DESCRIPTION:
 11. Spring Data part 2 + Spring MVC + Spring Boot
 
 To jest tekst dla branch_1
+To jest tekst branch_2
