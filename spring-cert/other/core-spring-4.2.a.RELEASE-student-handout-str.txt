@@ -19,3 +19,4 @@ To jest tekst dla branch_1
 To jest tekst branch_2
 
 created in BRANCH_A
+created in BRANCH_B
