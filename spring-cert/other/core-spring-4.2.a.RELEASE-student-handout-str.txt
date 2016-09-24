@@ -1,5 +1,3 @@
-SLIDES:556
-
 Questions for slides:
  441 - o co commmon ?
  515 - spring mvc configuration
@@ -15,3 +13,4 @@ VIDEO DESCRIPTION:
 10. Transactions part 2  + JPA + Spring Data part 1
 11. Spring Data part 2 + Spring MVC + Spring Boot part1
 12. Spring Boot part 2
+
