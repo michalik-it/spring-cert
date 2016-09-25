@@ -1,8 +1,16 @@
+SLIDES:648
+
 Questions for slides:
  441 - o co commmon ?
  515 - spring mvc configuration
+ 572 - <mvc:annotation-config /> i @EnableWebMvc
+ 606 - to run spring boot in external container
+ 629 - how to use command line argumets to set properties
+ 708 - spring rest common http headers 
+ 659 - springSecurityFilterChain
+ 684 - security filters chain explenation
 
-VIDEO: 12 00:00:00
+VIDEO: 13 00:54:00
 
 VIDEO DESCRIPTION:
 5. DI XML based + Bean Lifecycle  + Proxy
@@ -12,5 +20,13 @@ VIDEO DESCRIPTION:
 9. Data Managment + Transactions part 1
 10. Transactions part 2  + JPA + Spring Data part 1
 11. Spring Data part 2 + Spring MVC + Spring Boot part1
-12. Spring Boot part 2
+12. Spring Boot part 2 + Spring REST part1
+13. Spring REST part2 + Spring Security (1:23 springSecurityFilterChain)
+14. Spring Securit in Spring Boot + Rest List<Empoloyee> + Microservices
 
+CONF:
+java vm
+system os props
+[appFolder]/config/application.properties
+[appFolder]/application.properties
+classpath:application.properties

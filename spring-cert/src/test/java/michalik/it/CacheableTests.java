@@ -24,10 +24,10 @@ public class CacheableTests {
         System.out.println(someService.getUser("k"));
     }
     
-    public static void main(String... args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfiguration.class);    
-        SomeService s = context.getBean(SomeService.class);
-        System.out.println(s.getName());        
-    }
+//    public static void main(String... args) {
+//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfiguration.class);    
+//        SomeService s = context.getBean(SomeService.class);
+//        System.out.println(s.getName());        
+//    }
 
 }

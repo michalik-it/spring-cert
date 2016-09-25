@@ -1,6 +1,7 @@
 package michalik.it;
 
 import org.hsqldb.lib.HashMap;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
@@ -15,6 +16,10 @@ public class SomeService {
     
     private String name = "orginal";
     private Map<String, String> users;
+    
+    @Value("${app.someprop:default}")
+    private String someProperty;
+    
     
     public SomeService() {
         super();
@@ -54,4 +59,17 @@ public class SomeService {
 //        users.put("j", "Jan refreshed");
 //        users.put("w", "Will refreshed");
     }
+
+	public String getSomeProperty() {
+		return someProperty;
+	}
+
+	public void setSomeProperty(String someProperty) {
+		this.someProperty = someProperty;
+	}
+    
+    
+    
 }
+
+	

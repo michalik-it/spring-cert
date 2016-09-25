@@ -11,12 +11,15 @@ import michalik.it.service.TransactionService;
 
 @SpringBootApplication
 @ComponentScan
-@ImportResource("classpath:application-config.xml")
+//@ImportResource("classpath:application-config.xml")
 public class SpringCertApplication {
 
 	
 	public static void main(String[] args) throws InterruptedException {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringCertApplication.class, args);
+		
+		SomeService ss = context.getBean(SomeService.class);
+		System.out.println("=================> " + ss.getSomeProperty() + " <==========");
 		
 		/*
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MainConfiguration.class);
@@ -26,28 +29,28 @@ public class SpringCertApplication {
 		*/
 		
 		
-		TransactionService ts = context.getBean(TransactionService.class);
-		Thread t1 = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				ts.method1();
-			}
-		});
-		t1.start();
-		
-		Thread t2 = new Thread(new Runnable() {
-			@Override
-			public void run() {
-				ts.method2();
-			}
-		});
-		t2.start();
-		
-		t1.join();
-		t2.join();
-		
-		context.stop();
-		context.close();
+//		TransactionService ts = context.getBean(TransactionService.class);
+//		Thread t1 = new Thread(new Runnable() {
+//			@Override
+//			public void run() {
+//				ts.method1();
+//			}
+//		});
+//		t1.start();
+//		
+//		Thread t2 = new Thread(new Runnable() {
+//			@Override
+//			public void run() {
+//				ts.method2();
+//			}
+//		});
+//		t2.start();
+//		
+//		t1.join();
+//		t2.join();
+//		
+//		context.stop();
+//		context.close();
 		
 	}
 }

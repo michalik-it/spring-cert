@@ -52,8 +52,8 @@ public class SpringCertApplicationTests {
     public void test3() {
         System.out.println("test3() start");
         transactionService.transfer3(1, 2, 5000);
-//        transactionService.transfer(1, 2, 5000);
-//        transactionService.transfer(1, 2, 5000);
+        transactionService.transfer(1, 2, 5000);
+        transactionService.transfer(1, 2, 5000);
         System.out.println("Balance for 1:" + transactionService.getBalance(1));
         System.out.println("test3() end");
     }
