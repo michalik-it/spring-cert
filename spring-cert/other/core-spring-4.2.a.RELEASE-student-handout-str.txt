@@ -9,6 +9,7 @@ Questions for slides:
  708 - spring rest common http headers 
  659 - springSecurityFilterChain
  684 - security filters chain explenation
+ 710 - microservices
 
 VIDEO: 13 00:54:00
 

@@ -65,7 +65,6 @@ public class TransactionRepositoryImpl implements TransactionRepository {
     	try {
 			TimeUnit.SECONDS.sleep(seconds);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
     }
