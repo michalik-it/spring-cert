@@ -11,6 +11,10 @@
 	<name>spring-cert</name>
 	<description>Learn Vaadin with Spring Boot</description>
 
+	<scm>
+	    <developerConnection>scm:git:https://github.com/michalik-it/spring-cert.git</developerConnection>
+	</scm>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
