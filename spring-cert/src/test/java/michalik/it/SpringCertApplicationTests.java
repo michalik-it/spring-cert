@@ -3,6 +3,7 @@ package michalik.it;
 import michalik.it.service.TransactionService;
 import michalik.it.service.impl.TransactionServiceImpl;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,7 @@ public class SpringCertApplicationTests {
     
     @Test
     //@DirtiesContext
+    @Ignore
     public void test1() {
         System.out.println("test1() start");
         transactionService.transfer(1, 2, 5000);
@@ -42,12 +44,14 @@ public class SpringCertApplicationTests {
     }
     
     @Test
+    @Ignore
     public void test2() {
         System.out.println("test2() start");
         System.out.println("Balance for 1:" + transactionService.getBalance(1));
         System.out.println("test2() end");
     }
     
+    @Ignore
     @Test(expected=IllegalArgumentException.class)
     public void test3() {
         System.out.println("test3() start");

@@ -1,5 +1,6 @@
 package michalik.it;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ public class CacheableTests {
     SomeService someService;
     
     @Test
+    @Ignore
     public void testCache() {
         System.out.println(someService.getUser("k"));
         System.out.println(someService.getUser("k"));
