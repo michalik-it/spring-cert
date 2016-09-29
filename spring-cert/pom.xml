@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 
 	<name>spring-cert</name>
-	<description>Learn Vaadin with Spring Boot</description>
+	<description>Learn Vaadin with Spring Boot zmiana</description>
 
 	<scm>
 	    <developerConnection>scm:git:https://github.com/michalik-it/spring-cert.git</developerConnection>
