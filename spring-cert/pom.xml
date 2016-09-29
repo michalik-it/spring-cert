@@ -4,11 +4,11 @@
 
 	<groupId>it.michalik</groupId>
 	<artifactId>spring-cert</artifactId>
-	<version>0.0.3-SNAPSHOT</version>
+	<version>0.0.4-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>spring-cert</name>
-	<description>Learn Vaadin with Spring Boot zmiana</description>
+	<description>Learn Vaadin with Spring Boot zmiana dla 0.0.4</description>
 
 	<scm>
 	    <developerConnection>scm:git:https://github.com/michalik-it/spring-cert.git</developerConnection>
