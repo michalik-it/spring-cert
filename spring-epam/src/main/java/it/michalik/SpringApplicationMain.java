@@ -13,7 +13,7 @@ public class SpringApplicationMain implements CommandLineRunner {
 	
 	@Override
 	public void run(String... arg0) throws Exception {
-		System.out.println("SpringApplicationMain.run()");
+		logger.info("SpringApplicationMain.run()");
 		
 	}
 	public static void main(String[] args) {
