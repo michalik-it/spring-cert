@@ -1,4 +1,4 @@
-package michalik.it;
+package it.michalik.old;
 
 import java.util.List;
 import java.util.Map;

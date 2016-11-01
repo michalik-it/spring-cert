@@ -1,4 +1,4 @@
-package michalik.it;
+package it.michalik.old;
 
 public class Manager {
     String name;

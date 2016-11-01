@@ -9,10 +9,6 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<bean name="someService" class="michalik.it.SomeService">
-        <constructor-arg>
-            <bean name="someComponent" class="michalik.it.SomeComponent" />                     
-        </constructor-arg>                  
-    </bean>
+
 
 </beans>

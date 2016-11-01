@@ -1,4 +1,4 @@
-package michalik.it;
+package it.michalik.old;
 
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
